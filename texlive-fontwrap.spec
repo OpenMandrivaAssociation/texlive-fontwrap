@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/xetex/latex/fontwrap
+# catalog-date 2008-08-19 20:38:14 +0200
+# catalog-license gpl
+# catalog-version undef
 Name:		texlive-fontwrap
 Version:	20080819
 Release:	1
@@ -43,6 +49,7 @@ construct its tables.
 %doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap.tex
 %doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap_example.pdf
 %doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap_example.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ construct its tables.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
