@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-fontwrap
 Version:	20080819
-Release:	4
+Release:	5
 Summary:	Bind fonts to specific unicode blocks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/fontwrap
