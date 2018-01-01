@@ -1,9 +1,3 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/xetex/latex/fontwrap
-# catalog-date 2008-08-19 20:38:14 +0200
-# catalog-license gpl
-# catalog-version undef
 Name:		texlive-fontwrap
 Version:	20170414
 Release:	1
@@ -34,12 +28,8 @@ construct its tables.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/xelatex/fontwrap/fontwrap.sty
-%doc %{_texmfdistdir}/doc/xelatex/fontwrap/README
-%doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap.pdf
-%doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap.tex
-%doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap_example.pdf
-%doc %{_texmfdistdir}/doc/xelatex/fontwrap/fontwrap_example.tex
+%{_texmfdistdir}/tex/xelatex/fontwrap
+%doc %{_texmfdistdir}/doc/xelatex/fontwrap
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,17 +40,3 @@ construct its tables.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20080819-2
-+ Revision: 752048
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20080819-1
-+ Revision: 718488
-- texlive-fontwrap
-- texlive-fontwrap
-- texlive-fontwrap
-- texlive-fontwrap
-
