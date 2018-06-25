@@ -1,5 +1,5 @@
 Name:		texlive-fontwrap
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Bind fonts to specific unicode blocks
 Group:		Publishing
