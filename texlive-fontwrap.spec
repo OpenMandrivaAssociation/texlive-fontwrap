@@ -1,12 +1,12 @@
 Name:		texlive-fontwrap
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Bind fonts to specific unicode blocks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/fontwrap
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fontwrap.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fontwrap.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fontwrap.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fontwrap.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ multilingual text. The package uses Perl (via perltex) to
 construct its tables.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -33,7 +33,7 @@ construct its tables.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
