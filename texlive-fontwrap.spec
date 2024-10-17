@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Bind fonts to specific unicode blocks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/fontwrap
+URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/fontwrap
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fontwrap.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/fontwrap.doc.r%{version}.tar.xz
